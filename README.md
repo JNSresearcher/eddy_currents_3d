@@ -4,7 +4,7 @@
 |  :-:                                                      |
 | Fig.1. The general scheme of the geometric location of the calculation domains.|
   
-&emsp;In the air environment there are **n** windings with a given current density $\vec{J_{s1}},...\vec{J_{sn}}$ and which can move at arbitrary speeds $\vec{V}_{s1},...\vec {V}_{sn}$. The conducting region has a given conductivity $\sigma$ and has a given magnetic permeability of air $\mu_0$, and can also move at a constant speed $\vec{V}_{e}$.   
+&emsp;In the air environment there are **n** windings with a given current density $\vec{J_{s1}},...\vec{J_{sn}}$ and which can move at arbitrary speeds $\vec{V_{s1}},...\vec {V_{sn}}$. The conducting region has a given conductivity $\sigma$ and has a given magnetic permeability of air $\mu_0$, and can also move at a constant speed $\vec{V}_{e}$.   
 &emsp; Partial differential equations are solved in the time domain with respect to the magnetic vector potential $\vec A$ and the electric scalar potential $U$.  
    
 <a id="eq1">**Equations of non-conducting region:**</a>
