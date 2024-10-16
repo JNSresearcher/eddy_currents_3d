@@ -10,21 +10,31 @@
 <a id="eq1">**Equations of non-conducting region:**</a>
 <table><tr> 
 <td>
+
 $$D\left( \frac {\partial^2 A_x}{\partial x^2} + \frac{\partial^2 A_x}{\partial y^2} + \frac{\partial^2 A_x}{\partial z^2} \right) = -\mu_0 J_{sx}(x,y,x,t)$$
+  
 $$D\left( \frac {\partial^2 A_y}{\partial x^2} + \frac{\partial^2 A_y}{\partial y^2} + \frac{\partial^2 A_y}{\partial z^2} \right) = -\mu_0 J_{sy}(x,y,x,t) $$ 
-$$D\left( \frac {\partial^2 A_z}{\partial x^2} + \frac{\partial^2 A_z}{\partial y^2} + \frac{\partial^2 A_z}{\partial z^2} \right) = -\mu_0 J_{sz}(x,y,x,t) $$ 
+  
+$$D\left( \frac {\partial^2 A_z}{\partial x^2} + \frac{\partial^2 A_z}{\partial y^2} + \frac{\partial^2 A_z}{\partial z^2} \right) = -\mu_0 J_{sz}(x,y,x,t) $$
+
 </td>
 </tr></table>  
-
+  
 <a id="eq2">**Equations of conducting region:**</a>
 <table><tr> 
 <td>
-$$D\left( \frac {\partial^2 A_x}{\partial x^2} + \frac{\partial^2 A_x}{\partial y^2} + \frac{\partial^2 A_x}{\partial z^2} \right) - C  \left( \frac {\partial A_x}{\partial t} + V_{ex} \frac {\partial A_x}{\partial x} + V_{ey} \frac{\partial A_x}{\partial y} + V_{ez} \frac{\partial A_x}{\partial z}  + \frac{\partial U}{\partial x} \right) = 0 $$
+
+$$D\left( \frac {\partial^2 A_x}{\partial x^2} + \frac{\partial^2 A_x}{\partial y^2} + \frac{\partial^2 A_x}{\partial z^2} \right) - C  \left( \frac {\partial A_x}{\partial t} + V_{ex} \frac {\partial A_x}{\partial x} + V_{ey} \frac{\partial A_x}{\partial y} + V_{ez} \frac{\partial A_x}{\partial z}  + \frac{\partial U}{\partial x} \right) = 0$$
+
 $$D\left( \frac {\partial^2 A_y}{\partial x^2} + \frac{\partial^2 A_y}{\partial y^2} + \frac{\partial^2 A_y}{\partial z^2} \right) - C  \left( \frac {\partial A_y}{\partial t} + V_{ex} \frac {\partial A_y}{\partial x} + V_{ey} \frac{\partial A_y}{\partial y} + V_{ez} \frac{\partial A_y}{\partial z}  + \frac{\partial U}{\partial y} \right) = 0$$
-$$D\left( \frac {\partial^2 A_z}{\partial x^2} + \frac{\partial^2 A_z}{\partial y^2} + \frac{\partial^2 A_z}{\partial z^2} \right) - C  \left( \frac {\partial A_z}{\partial t} + V_{ex} \frac {\partial A_z}{\partial x} + V_{ey} \frac{\partial A_z}{\partial y} + V_{ez} \frac{\partial A_z}{\partial z} + \frac{\partial U}{\partial z}  \right) = 0 $$
-$$\left(\frac {\partial^2 U}{\partial x^2} + \frac{\partial^2 U}{\partial y^2} + \frac{\partial^2 U}{\partial z^2} \right) + \frac {\partial}{\partial x} \frac{\partial A_x}{\partial t} + \frac {\partial}{\partial y} \frac{\partial A_y}{\partial t} + \frac {\partial}{\partial z} \frac{\partial A_z}{\partial t}=0 $$
+
+$$D\left( \frac {\partial^2 A_z}{\partial x^2} + \frac{\partial^2 A_z}{\partial y^2} + \frac{\partial^2 A_z}{\partial z^2} \right) - C  \left( \frac {\partial A_z}{\partial t} + V_{ex} \frac {\partial A_z}{\partial x} + V_{ey} \frac{\partial A_z}{\partial y} + V_{ez} \frac{\partial A_z}{\partial z} + \frac{\partial U}{\partial z}  \right) = 0$$
+  
+$$\left(\frac {\partial^2 U}{\partial x^2} + \frac{\partial^2 U}{\partial y^2} + \frac{\partial^2 U}{\partial z^2} \right) + \frac {\partial}{\partial x} \frac{\partial A_x}{\partial t} + \frac {\partial}{\partial y} \frac{\partial A_y}{\partial t} + \frac {\partial}{\partial z} \frac{\partial A_z}{\partial t}=0$$
+
 </td>
 </tr></table>
+  
 &emsp; In the given equations $D=1$ is the diffusion coefficient, $C=\mu_0\sigma$ is the inertial coefficient.  
   
 &emsp; Boundary conditions: open boundaries for magnetic vector potential.   For the electric scalar potential, zero Neumann conditions for the normal component at the boundary of the conducting region. Also at the boundary of the conducting region, zero normal components for eddy currents.  
@@ -84,12 +94,14 @@ Next run the executable file: **EC3D.exe**. As a result, output files will be cr
 | ![ ](./img/domain_size.jpg)              |
 |  :-:                                     |
 | Fig.2. Region sizes for the test example.|
+ 
 &emsp;A sinusoidal current with an amplitude of $183 A$ and a frequency of $50 Hz$ is set in the winding. The electrical conductivity of the conductor is $\sigma=35.26\cdot 10^6 S/m$  
 &emsp;Below in  <a id="Fig.3">Fig.3</a> are screenshots taken in **Elmer FEM** and **VoxCAD** (geometry prepared for **EC3D.exe**). The  **/for_Elmer** directory contains an archive [eddy_currents.7z](./for_Elmer/eddy_currents.7z)  with a mesh and a task for **Elmer FEM**.  Geometry and data for calculation in **EC3D** are contained in the file **compare_to_Elmer.vxc** in the directory **/src**
 
-|&emsp;![ ](./img/geom_Elmer.jpg)|&emsp;&emsp;&emsp;![ ](./img/geom_EC3D.jpg) | 
+|&emsp;![ ](./img/geom_Elmer.jpg)|&emsp;![ ](./img/geom_EC3D.jpg) | 
 |  :-:                     |:-:                         | 
-|&emsp;&emsp;a) geometry for **ElmerFEM**|&emsp;&emsp;b) geometry for **EC3D** (prepared in **VoxCAD**) |
+|a) geometry for **ElmerFEM**|b) geometry for **EC3D** (prepared in **VoxCAD**) |
+ 
 &emsp;&emsp;&emsp;&emsp; Fig.3. Screenshots of geometry for calculations in **ElmerFEM** and **EC3D**. 
 
 &emsp;The **Elmer FEM** tetrahedral mesh geometry contains $13244$ nodes and $111042$
@@ -100,9 +112,10 @@ Next run the executable file: **EC3D.exe**. As a result, output files will be cr
   
 &emsp; Below in Fig. 4 the results of the calculation of the eddy current field on the plate surface are shown, displayed in **Paraview**. **Line X** and **Line Y** are highlighted.
 
-|&emsp;&emsp;![ ](./img/screenElmer.jpg)|&emsp;&emsp;&emsp;&emsp;![ ](./img/screenEC3Da.jpg) | 
+|&emsp;&emsp;![ ](./img/screenElmer.jpg)|&emsp;&emsp;![ ](./img/screenEC3Da.jpg) | 
 |  :-:                                  |:-:                         | 
 |a) **Elmer FEM**                                  |b) **EC3D**                |
+  
 &emsp;&emsp;&emsp;&emsp; Fig.4. Screenshots of the eddy current field on the surface of the plate at time t=0.017sec. 
   
   Below in Fig. 5 are graphs of the magnitude and **x**- **y**- components of the eddy current density on the surface of the plate along the **Line X** and **Line Y** at time t=0.017sec.  The positive directions of lines **Line X** and **Line Y**  are shown in  [Fig. 2.](#Fig.2)   
@@ -110,6 +123,7 @@ Next run the executable file: **EC3D.exe**. As a result, output files will be cr
 |![ ](./img/valid_Line_Ya.jpg)|![ ](./img/valid_Line_Xa.jpg)|
 |  :-:                        |:-:                          | 
 |a) eddy current density  along **Line Y**|b) eddy current density along **Line X**|
+
 &emsp; Fig.5. Graphs  of the eddy current density. Solid lines of the graphs correspond to calculations in the **EC3D**, dashed lines correspond to calculations in the **Elmer FEM**.  
   
 &emsp; It can be seen from Fig. 5 that the simulation results obtained in **EC3D** are in good agreement with the results obtained in **Elmer FEM**. Some local discrepancies may be due to the fact that **Elmer FEM** better tracks the complex trajectory of eddy currents, and some non-smoothness of the graphs may be due to the insufficiently fine mesh of **Elmer FEM**.  
@@ -168,6 +182,7 @@ Since all elements of the coil are located in the air, the coefficient “D” f
 |![ ](./img/ec_src_move_hole.jpg) | ![ ](./img/ec_src_move_hole.gif)|
 |  :-:                            |:-:                          | 
 | a) geometry prepared in **VoxCAD**|b) displayed result in **Paraview** |
+
 &emsp;&emsp;&emsp;&emsp; Fig.6. Screenshots of geometry and calculation results  
   
 The calculation time was about $295 sec$  
@@ -194,15 +209,15 @@ Let us give some explanations.Since the problem is similar to the previous probl
 * **ayp** and **aym**  strings . Similarly, they specify the vector current source for parts of the coil in the **y** direction .  
 * **p1** and **p2** strings.  These lines specify time intervals, solver parameters, and the directory name for output files. 
 * **f1** **f2**   strings describe the functions of changing the currents in the coils in the positive and negative directions, respectively. These strings does not change.  
-* **m1**, **m2**   strings describe the parametric functions for calculating the coil speed along **x** and **y** axis. The trajectory is specified as a function of time for velocities along  **x-** and **y-**coordinates. In this case, it is a ellipse line. The parametric definition of a ellipse line for the coordinates is known:  
-&emsp; &emsp; $x = a*sin(2*\pi*f*t)$  
-&emsp; &emsp; $y = b*cos(2*\pi*f*t)$,  
+* **m1**, **m2**   strings describe the parametric functions for calculating the coil speed along **x** and **y** axis. The trajectory is specified as a function of time for velocities along  **x** and **y** coordinates. In this case, it is a ellipse line. The parametric definition of a ellipse line for the coordinates is known:  
+&emsp;&emsp; $x=a\*sin(2\*\pi\*f\*t)$   
+&emsp;&emsp; $y=b\*cos(2\*\pi\*f\*t)$,   
 where  **a** and **b** are the semi-axes of the ellipse, **f** - frequency,  **t** - time (parameter).  
 &emsp; After differentiation with respect to time, we obtain expressions for the velocities:  
-&emsp; &emsp; $dx/dt =  a*2*\pi*f*cos(t)$  
-&emsp; &emsp; $dy/dt = -b*2*\pi*f*sin(t)$  
+&emsp;&emsp; $dx/dt= a\*2*\pi\*f\*cos(t)$   
+&emsp;&emsp; $dy/dt=-b\*2*\pi\*f\*sin(t)$   
 &emsp;The values ​​of the coefficients **a** and **b** are selected in such a way that the trajectory is located only above the conductor:  
-&emsp; &emsp; $a = dX*(Nx-42)/2,  b = dY*(Ny-42)/2$,  
+&emsp; &emsp; $a = dX\*(Nx-42)/2,  b = dY\*(Ny-42)/2$,  
 where **Nx**, **Ny** - size of the calculation area along **x** and **y**. **dX**, **dY** - grid steps along **x,y**.  The doubled distance from the conductor to the boundary of the calculation area is equal to 12 cells , the width and length of the coil is 30 cells. In total, 30+12 this is 42 cells. When calculating the semi-axes of the ellipse, the obtained numbers are taken into account.  
 &emsp; It should be noted that the initial coordinates of the trajectory correspond to the value of the parameter **t=0** and the initial coordinates of the coil placement.
   
@@ -214,7 +229,7 @@ where **Nx**, **Ny** - size of the calculation area along **x** and **y**. **dX*
 
 |![ ](./img/LIM_vox.jpg) | &emsp;&emsp;![ ](./img/LIM.gif)|
 |  :-:                            |:-:                          | 
-|                                 |          |
+
 &emsp;&emsp; Fig.7. Screenshots of geometry and calculation results of reciprocating motion of a linear induction machine.  
   
 The total size calculation area is **880mm x 304mm x 220mm**. The number of cells is $123904$. The model time of the transient process is set to $0.2 sec$, the number of steps is set to $200$.  The calculation took about $105 sec$.  
@@ -233,4 +248,3 @@ In the figure, at t=0.1sec, the direction of movement changes. It is clearly see
 ***
   
  ***
-
