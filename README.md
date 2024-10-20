@@ -242,9 +242,7 @@ In the figure, at t=0.1sec, the direction of movement changes. It is clearly see
 
 
 ### Conclusion
-&emsp; In general, the proposed approach allows performing sketch calculations of eddy currents in three-dimensional space when there are no high requirements for the geometry of the problem  and there are no magnetized areas.  
-  
+&emsp; In general, the proposed approach allows performing sketch calculations of eddy currents in three-dimensional space when there are no high requirements for the geometry of the problem  and there are no magnetized areas. Calculations with a moving coils are at the research stage and and are experimental.
   
 ***
-  
- ***
+***
