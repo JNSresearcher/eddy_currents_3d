@@ -289,19 +289,19 @@ Text entered on the  **Palette** tab:
 &emsp; Let us dwell only on what is connected with the assignment of the mechanical movement of the coil.  
 &emsp; The lines named **axp**, **axm**, **ayp** and **aym** contain the keywords "Vsx", "Vsy, "Vsz" with references to the corresponding functions **Vmx, Vmy** and **Vmz**. The description of these functions is in lines **m1**, **m2**, **m3**, which define parametric formulas for calculating the coil speed along the **x**, **y** and **z** axes.  
 &emsp;The trajectory for movement along an ellipse is defined as a function of time for velocities along coordinates **x** and **y** . The parametric definition of the ellipse line is known:  
-&emsp; &emsp; $x = a*sin(2*\pi*f*t)$  
-&emsp; &emsp; $y = b*cos(2*\pi*f*t)$,  
+&emsp; &emsp; $x = a \cdot sin(2\cdot\pi\cdot f\cdot t)$  
+&emsp; &emsp; $y = b \cdot cos(2\cdot \pi \cdot f \cdot t)$,  
 where  **a** and **b** are the semi-axes of the ellipse, **f** - frequency,  **t** - time (parameter).  
 &emsp; After differentiation with respect to time, we obtain expressions for the velocities:  
-&emsp; &emsp; $dx/dt =  a*2*\pi*f*cos(2*\pi*ft)$  
-&emsp; &emsp; $dy/dt = -b*2*\pi*f*sin(2*\pi*ft)$  
+&emsp; &emsp; $dx/dt =  a\cdot 2 \cdot \pi \cdot f \cdot cos(2\cdot\pi\cdot f \cdot t)$  
+&emsp; &emsp; $dy/dt = -b\cdot 2 \cdot \pi \cdot f \cdot sin(2\cdot\pi\cdot f \cdot t)$  
 &emsp;The values ​​of the coefficients **a** and **b** are selected in such a way that the trajectory is located only above the conductor:  
 &emsp; &emsp; $a = dX*(Nx-55)/2,  b = dY*(Ny-45)/2$,  
 where **Nx**, **Ny** - size of the calculation area along **x** and **y**. **dX**, **dY** - grid steps along **x,y**.   
 &emsp; Similarly, for oscillations along the z-axis we have the function:  
-&emsp; &emsp; $z = -a*cos(2*\pi*f*t)$  
+&emsp; &emsp; $z = -a \cdot cos(2 \cdot \pi \cdot f \cdot t)$  
 &emsp; The value of the amplitude **a** is chosen so that the trajectory is located above the conductor, but does not touch it. Since the gap is **1.25 cm**, the amplitude of the sinusoid is taken to be **1 cm**. In this case, the amplitude is calculated as $a=dZ*4$, where **dZ** - grid step along **z** (2.5mm). After differentiation we obtain an expression for the velocity along the **z**-axis:  
-&emsp; &emsp;  $dz/dt =  a*2*\pi*f*sin(2*\pi*f*t)$  
+&emsp; &emsp;  $dz/dt =  a \cdot 2 \cdot \pi \cdot f \cdot sin(2 \cdot \pi \cdot f\cdot t)$  
 &emsp; The description of this function is located in line **m3**. The oscillation frequency is taken to be **f=10 Hz**.  
 &emsp; It should be noted that the initial coordinates of the trajectory correspond to the value of the parameter **t=0** and the initial coordinates of the coil placement.   
   
