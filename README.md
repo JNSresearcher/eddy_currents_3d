@@ -237,11 +237,12 @@ The coil is supplied with alternating current with a frequency of **50 Hz** and 
 |![ ](./img/for_Agros.jpg) | ![ ](./img/parav_for_agros.gif)|
 |  :-:                     |:-:                          | 
 | a) prepared geometry in **VoxCAD**|b) displaying the result in  **Paraview** |
+
 &emsp;&emsp; Fig.7. Sscreenshots of geometry created by **VoxCAD** and calculation results obtained in **EC3D** and displayed in **ParaView**
 
 &emsp; Below in Fig. 8 the geometry and results obtained in **Agros2d** are presented. The speed of the plate relative to the coil is **Ve=-7.5 m/sec**. The **/for_compar** directory contains the **for_compare_with_Agros.7z** archive with source data for calculations in **Agros2d**.   
 
-|![ ](./img/Agros_msh.jpg) | ![ ](./img/Agros.gif)   |
+|![ ](./img/Agros_msh.jpg) | ![ ](./img/agros.gif)   |
 |  :-:                     |:-:                          | 
 | a) geometry prepared in **Agros2d** | b) displayed result in **Agros2d** |
 
@@ -266,6 +267,7 @@ The coil is supplied with alternating current with a frequency of **50 Hz** and 
 |![ ](./img/ec_src_move_hole.jpg) | ![ ](./img/ec_src_move_hole.gif)|
 |  :-:                            |:-:                          | 
 | a) geometry prepared in **VoxCAD**|b) displayed result in **Paraview** |
+
 &emsp;&emsp;&emsp;&emsp; Fig.10. Screenshots of geometry and calculation results  
   
 &emsp; Here are some explanations for compiling a task for calculation with moving coils. The difference from the task with stationary coils is only in additional information about the mechanical speeds of the coils. The task is in the file **ec_src_moveXYZ_hole.vxc**.  
