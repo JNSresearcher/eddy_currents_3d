@@ -1,5 +1,4 @@
 
-
 3D eddy current modeling for sketch calculations
 
 ### 1 Formulations
@@ -15,16 +14,16 @@
 <a id="eq1">**Equations of non-conducting region:**</a>
 <table><tr> 
 <td>
-$$   \nabla^2 \vec{A} = -\mu_0 \vec{J}_s(t,x,y,z) $$ 
+$$\nabla^2 \vec{A} = -\mu_0 \vec{J}_s(t,x,y,z)$$ 
 </td>
 </tr></table>  
   
 <a id="eq2">**Equations of conducting region:**</a>
 <table><tr> 
 <td>
-$$  \nabla^2 \vec{A}-\mu_0\sigma \left(\frac{\partial \vec{A}}{\partial t} +\nabla U + (\vec{V}_e \cdot\nabla) \vec{A}  \right)= 0  $$ 
+$$\nabla^2 \vec{A}-\mu_0\sigma \left(\frac{\partial \vec{A}}{\partial t} +\nabla U + (\vec{V}_e \cdot\nabla) \vec{A}  \right)= 0$$ 
   
-$$  \nabla^2 U + \nabla \cdot \left( \frac{\partial \vec{A}}{\partial t} + (\vec{V}_e\cdot\nabla) \vec{A} \right) = 0 $$ 
+$$\nabla^2 U + \nabla \cdot \left( \frac{\partial \vec{A}}{\partial t} + (\vec{V}_e\cdot\nabla) \vec{A} \right) = 0$$ 
 </td>
 </tr></table>
 
@@ -34,7 +33,7 @@ $$  \nabla^2 U + \nabla \cdot \left( \frac{\partial \vec{A}}{\partial t} + (\vec
       <p>
 <table><tr> 
 <td>
-$$ \vec{J_e} = \sigma \left( \frac{\partial \vec{A}}{\partial t} +\nabla U + (\vec{V}_e\cdot\nabla) \vec{A}   \right) $$
+$$\vec{J_e} = \sigma \left( \frac{\partial \vec{A}}{\partial t} +\nabla U + (\vec{V}_e\cdot\nabla) \vec{A} \right)$$
 </td>
 </tr></table>
       </p>
@@ -44,15 +43,14 @@ $$ \vec{J_e} = \sigma \left( \frac{\partial \vec{A}}{\partial t} +\nabla U + (\v
 the Hodge-Helmholtz projection method was used by solving the Poisson equation
 <table><tr> 
 <td>
-$$ \nabla^2 \phi = \nabla \cdot \vec{J_e}^n; &emsp; \vec{J_e}^{n+1} = \vec{J_e}^n - \nabla\phi $$
+$$\nabla^2 \phi = \nabla \cdot \vec{J_e}^n; &emsp; \vec{J_e}^{n+1} = \vec{J_e}^n - \nabla\phi$$
 </td>
 </tr></table>
 
 To derive these equations, I used the information given in the [Bibliography](#bibliog).   
 
 **Matrix form of equations for calculations:**
-<table><tr> 
-<td>
+
 $$
 \begin{aligned}
 \begin{bmatrix}
@@ -75,8 +73,6 @@ U
 \end{bmatrix} 
 \end{aligned}
  $$
-</td>
-</tr></table>
 
 &emsp;In this matrix equation, the velocity-dependent components are placed on the right-hand side. The values ​​of the vector potential in the vector of the right sides are determined from the results obtained in the previous calculation step.    
 &emsp; Boundary conditions: open boundaries for magnetic vector potential.   For the electric scalar potential, zero Neumann conditions for the normal component at the boundary of the conducting region. Also at the boundary of the conducting region, zero normal components for eddy currents.  
