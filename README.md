@@ -166,6 +166,7 @@ Next run the executable file: **EC3D.exe**. As a result, output files will be cr
 |![ ](./img/Valid_Line_V2.jpg)|![ ](./img/Valid_Line_H2.jpg)|
 |  :-:                        |:-:                          | 
 |c) eddy current density  along **Line V2**|d) eddy current density along **Line H2**|
+
 &emsp; Fig.5. Graphs  of the eddy current density. Solid lines of the graphs correspond to calculations in the **EC3D**, dashed lines correspond to calculations in the **Elmer FEM**.  
   
 &emsp; It can be seen from Fig. 5 that the **EC3D** (_Intel mkl pardiso_ library used) simulation results agree well with the **Elmer FEM** results in areas close to the center of the plate. Further from the center, there is a noticeably larger discrepancy with **Elmer**. This is especially noticeable for *Jx* along **Line H2**  and *Jy* along **Line V2**. 
