@@ -8,7 +8,7 @@
 |  :-:                                                      |
 | Fig.1. Sketch of the geometric arrangement of the calculation regions.|
   
-&emsp; In the air environment (magnetic permeability of air **$\mu_0$**) there are several conductive regions with the same conductivity **$\sigma$**  and   **$n$** windings with a given current density **$\vec{J_{s1}},...\vec{J_{sn}}$**. All windings can move at the same speed (without rotation) **$\vec{V}_s$**. If the coils velocity **$\vec{V}_s$** is specified, then the conducting region is automatically assigned the velocity in Euler coordinates **$\vec{V}_{e} = -\vec{V}_{s}$**.  
+&emsp; In the air environment (magnetic permeability of air **$\mu_0$**) there are several conductive regions with the same conductivity **$\sigma$**  and   **$n$** windings with a given current density **$\vec{J_{s1}},...\vec{J_{sn}}$**. All windings can move at the same speed (without rotation) **$\vec{V}_s$**. If the coils velocity **$\vec{V}_s$** is specified, then the conducting region is automatically assigned the velocity in Euler coordinates **$\vec{V}_e = -\vec{V}_s$**.  
 &emsp; Partial differential equations are solved in the time domain for the vector magnetic potential $\vec A$ and the scalar electric potential $U$.  
    
 <a id="eq1">**Equations of non-conducting region:**</a>
