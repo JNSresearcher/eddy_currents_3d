@@ -1,0 +1,26 @@
+agros2_New.gif     parav_for_agros.gif
+agros_New.gif       Agros.gif
+Agros_msh.jpg 
+Agros_EC3D_t17.jpg 
+Agros_EC3D_t22.jpg
+Agros_EC3D_t30.jpg   Agros_EC3D_t27.jpg 
+domain_size2.jpg     domain_size.jpg 
+ec_src_move_hole2.jpg ec_src_move_hole.jpg
+ec_src_move_hole2.gif ec_src_move_hole.gif
+for_Agros.jpg
+geom_Elmer.jpg
+geom_EC3D.jpg
+general_phis_domains2a.jpg general_phis_domains.jpg
+geom_for_Agros2.jpg        geom_for_Agros.jpg
+General_view_VoxCAD.jpg
+LIM_2a_New.gif             LIM.gif
+LIMa-vox.jpg               LIM-vox.jpg
+LIM_Jy_t.jpg
+screenElmer2Txt.jpg      screenElmer.jpg
+screenEC3Dpardiso3a.jpg  screenEC3Dpardiso.jpg
+Valid_Line_V1a.jpg       Valid_Line_V1.jpg
+Valid_Line_H1a.jpg       Valid_Line_H1a.jpg
+Valid_Line_V2a.jpg       Valid_Line_V2.jpg
+Valid_Line_H2a.jpg       Valid_Line_H2.jpg       
+
+
