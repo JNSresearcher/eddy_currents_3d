@@ -8,7 +8,7 @@ import base64
 import numpy as np
 
 
-letter="123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz"
+letter="123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz"
 z_list=list(letter)
 
 fd = open('uncompress.txt','wt')
